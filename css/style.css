@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #cecece;
+}
+.main{
+    background-color: #dfe0ff;
+    margin: 0 auto;
+    border: 6px solid #000;
+    width: 80%;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.container{
+    width: 80%;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+.picture, .mp{
+    width: 230px;
+    height: 270px;
+}
+.picture, .name{
+    display: inline-block;
+}
+.picture{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.name{
+    font-size: 35px;
+    font-family: serif;
+}
+.details{
+    margin-top: 70px;
+}
+.d-heading{
+    font-size: 40px;
+    margin: 30px 0;
+}
+.d-para{
+    font-size: 16px;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.fst{
+    font-weight: bolder;
+}
+.biography{
+    margin: 50px 0;
+}
+.biography h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+.biography ul li{
+    list-style: none;
+    margin: 5px 0;
+    font-weight: normal;
+}
+footer {
+    margin: 50px 0;
+}
+html body div footer p {
+    font-size: 10px;
+    text-align: end;
+}
+footer p, 
+.biography ul li{
+    font-size: 14px;
+}
+footer p a{
+    text-decoration: none;
+    color: #ff000d;
+}
+
+
+/* ####################################### Media query ########################################## */
+
+
+@media screen and (max-width: 1210px) and (min-width: 1024px){
+    .name{
+        font-size: 25px;
+    }
+    .picture, .mp{
+        width: 190px;
+        height: 230px;
+    }
+    .d-heading{
+        font-size: 27px;
+    }
+    .biography h3 {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 1024px) and (min-width: 900px){
+    html body div .d-para{
+        font-size: 14px;
+    }
+    .name{
+        font-size: 22px;
+    }
+    .picture, .mp{
+        width: 170px;
+        height: 210px;
+    }
+    html body div .d-heading{
+        font-size: 26px;
+    }
+    .biography h3 {
+        font-size: 21px;
+    }
+}
+@media screen and (max-width: 900px) and (min-width: 768px){
+    html body div .d-para{
+        font-size: 13px;
+    }
+    .name{
+        font-size: 19px;
+    }
+    .picture, .mp{
+        width: 152px;
+        height: 198px;
+    }
+    html body div .d-heading{
+        font-size: 22px;
+    }
+    .biography ul li{
+        font-size: 12px;
+    }
+    .biography h3 {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 600px){
+    .main{
+        width: 100%;
+    }
+    .picture, .mp{
+        width: 130px;
+        height: 155px;
+    }
+    .name{
+        font-size: 17px;
+    }
+    html body div .d-heading{
+        font-size: 20px;
+    }
+    .d-para{
+        font-size: 12px;
+    }
+    .biography ul li{
+        font-size: 11px;
+    }
+    .biography h3 {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 600px) and (min-width: 480px){
+    .container{
+        padding-top: 50px;
+    }
+    .info{
+        display: block;
+    }
+    html body div .picture{
+        display: block;
+        margin: 0 auto;
+    }
+    html body div h1,
+    html body div h4{
+        text-align: center;
+    }
+    .main{
+        width: 100%;
+    }
+    .picture, .mp{
+        width: 125px;
+        height: 145px;
+    }
+    .name{
+        font-size: 17px;
+        width: 100%;
+        margin-top: 30px;
+    }
+    html body div .d-heading{
+        font-size: 18px;
+    }
+    .d-para{
+        font-size: 15px;
+    }
+    .biography ul li{
+        font-size: 15px;
+    }
+    .biography h3 {
+        font-size: 17px;
+    }
+    .d-para{
+        text-align: left;
+    }
+}
+@media screen and (max-width: 480px) and (min-width: 200px){
+    .container{
+        padding-top: 50px;
+    }
+    .info{
+        display: block;
+    }
+    html body div .picture{
+        display: block;
+        margin: 0 auto;
+    }
+    html body div h1,
+    html body div h4{
+        text-align: center;
+    }
+    .main{
+        width: 100%;
+    }
+    .picture, .mp{
+        width: 125px;
+        height: 145px;
+    }
+    .name{
+        font-size: 16px;
+        width: 100%;
+        margin-top: 27px;
+    }
+    html body div .d-heading{
+        font-size: 16px;
+    }
+    .d-para{
+        font-size: 13px;
+    }
+    .biography ul li{
+        font-size: 13px;
+    }
+    .biography h3 {
+        font-size: 15px;
+    }
+    .d-para{
+        text-align: left;
+    }
+}
